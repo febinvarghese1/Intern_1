@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    height: 35vh;
+    width: 70%;
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.65);
+}
+
+.table th{
+    background-color: lightgray;
+    text-transform: capitalize;
+    padding: 20px 15px;
+    
+}
+
+.table td{
+    text-transform: capitalize;
+    text-align: center;
+    padding:10px 0px;
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.25);
+    margin-top: 20px;
+}

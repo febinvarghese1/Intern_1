@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="">
+      <form action="" id="form">
+        <div class="wrapper">
+        <div class="form-group">
+          <label for="source">Select Your Source: |</label>
+          <select name="source" id="source" onchange="changeVal()">
+            <option value="GCS">Google Cloud Storage</option>
+            <option value="AWS">Amazon Web Services</option>
+            <option value="AZURE">MicroSoft Azure</option>
+            <option value="FireBase">FireBase</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pipeline">Provide a name for pipeline: |</label>
+          <input
+            type="text"
+            placeholder="e.g.,cust_shop_energy_gkateway001"
+            id="pipeline"
+            onkeyup="validateInputs(id)"
+            
+          />
+          <span id="icon"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="ProjectName"><span id="nameVal">GCS</span> project name: |</label>
+          <input type="text" placeholder="project-id" id="projectname"
+          onkeyup="validateInputs(id)"
+          
+        />
+        <span id="icon"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="bucketName"><span id="nameVal">GCS</span> bucket name: |</label>
+          <input type="text" placeholder="gs://your-bucket"   id="bucketname"
+          onkeyup="validateInputs(id)"
+          
+        />
+        <span id="icon"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="storageFile">Input Cloud Storage File(s): |</label>
+          <input
+            type="text"
+            placeholder="GCS location of your files"
+            id="storagefile"
+            onkeyup="validateInputs(id)"
+            
+          />
+          <span id="icon"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="credentials"><span id="nameVal">GCS</span> credentials: |</label>
+          <input type="text" placeholder=""   id="credentials"
+          onkeyup="validateInputs(id)"
+          
+        />
+        <span id="icon"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="timeRun">Run Every: |</label>
+          <input type="text" placeholder="(in minutes)"   id="timerun"
+          onkeyup="validateTime(id)"
+          
+        />
+        <span id="icon"></span>
+        </div>
+        <div class="btnContainer">
+          <button >Create</button>
+          <button class="">Cancel</button>
+        </div>
+    </div>
+      </form>
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

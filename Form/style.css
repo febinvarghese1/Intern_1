@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: linear-gradient(120deg, #440442 , #0cbaba);
+	font-family: 'Roboto Slab';
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width:100%;
+
+}
+
+#form{
+	background-color: white;
+	width:600px;
+	height: 80vh;
+	padding:3px 40px;
+	box-shadow: 4px 6px 8px rgba(0,0,0, 0.75);
+	border-radius: 15px;
+	font-size: 16px;
+}
+.wrapper{
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.form-group{
+	width:100%;
+	display: flex;
+	align-items: center;
+	margin:15px 0px;
+	padding:0px 20px;
+	position: relative;
+}
+
+.form-group label{
+	flex:1;
+}
+
+.form-group select{
+	width: 50%;
+	padding:10px;
+}
+.form-group option{
+	text-transform: capitalize;
+}
+
+
+.form-group input{
+	flex:1;
+	width: 50%;
+	padding:10px 5px;
+	border: 0;
+	font-size: 16px;
+
+	outline: none;
+	background-color: lightgray;
+	border-bottom: 1px solid black;
+	transition: border 300ms linear;
+	
+
+}
+::placeholder{
+	font-size: 13px;
+	padding-left: 10px;
+}
+
+
+.success input{
+	border-bottom: 2px solid green;
+}
+.error input{
+	border-bottom: 2px solid red;
+}
+
+.btnContainer{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.btnContainer  button{
+	padding:10px;
+	border: none;
+	background-color: lightblue;
+	width: 50%;
+	margin-top: 10px;
+	margin-left: 15px;
+	cursor: pointer;
+	transition: all 300ms ease-in;
+	text-transform: uppercase;
+}
+.btnContainer button:hover{
+	transform: scale(1.1);
+}
+
+
+#icon{
+	position: absolute;
+	right: 0;
+}
