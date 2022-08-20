@@ -1,5 +1,11 @@
 const form = document.getElementById("form");
 
+
+
+
+
+//function to validate inputs
+
 const validateInputs = (id) => {
   let inputsVal = document.getElementById(id).value;
   const idVal = document.getElementById(id);
@@ -29,6 +35,9 @@ const validateInputs = (id) => {
   }
 };
 
+
+
+//this function is used to validate the time input
 const validateTime = (id) => {
   let inputsVal = document.getElementById(id).value;
   const idVal = document.getElementById(id);
@@ -58,15 +67,23 @@ const validateTime = (id) => {
   }
 };
 
+
+
+//check the starting character of the input
 const startWithChar = (char) => {
   const startsWith = /[`_+-]/;
   return startsWith.test(char);
 };
+
+//check if any special characters in the input
 const containsSpecialChar = (str) => {
   const specialChar = /[`!@#$%^&*()\=\[\]{};':"\\|,.<>\/?~]/;
   return specialChar.test(str);
 };
 
+
+
+//this function is used change the source name
 const changeVal = () => {
   const source = document.getElementById("source").value;
 

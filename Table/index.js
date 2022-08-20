@@ -1,3 +1,4 @@
+//table data
 let values = [
   [
     "machine_name",
@@ -39,6 +40,7 @@ const row2 = document.getElementById("row-2");
 const row3 = document.getElementById("row-3");
 
 for (let i = 0; i < values[0].length; i++) {
+  //adding values dynamically
   let rowValues1 = `<tr>
     <th>${values[0][i]}</th>  
   </tr>`;
